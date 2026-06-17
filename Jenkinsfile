@@ -1,6 +1,6 @@
 pipeline{
 	agent any
-	tool{
+	tools{
 		gradle'Gradle'
 		jdk'JDK'
 		}
@@ -20,7 +20,7 @@ pipeline{
 			sh'gradle build'
 			}
 		}
-		stage('build'){
+		stage('run'){
 			steps{
 			sh'gradle run'
 			}
